@@ -18,12 +18,12 @@ static class PasswordManager {
         passwords.Remove(GetHash(input));
 
     public static void Main() {
-        // AddPassword("password"); // Sterotypical Weak Password
-        // AddPassword("password123"); // Sterotypical Weak Password
-        // AddPassword("pass1word"); // Sorta Strong
-        // AddPassword("drowssap"); // 'password' Reversed
-        // AddPassword("ilovechicken"); // First thing that came to mind
-        // AddPassword("copper123"); // My dog's name followed by some numbers
+        AddPassword("password"); // Sterotypical Weak Password
+        AddPassword("password123"); // Sterotypical Weak Password
+        AddPassword("pass1word"); // Sorta Strong
+        AddPassword("drowssap"); // 'password' Reversed
+        AddPassword("ilovechicken"); // First thing that came to mind
+        AddPassword("copper123"); // My dog's name followed by some numbers
 
         string? current;
         while((current = Console.ReadLine()) is not null && current.Length > 0) {
